@@ -1,0 +1,11 @@
+<tr *ngIf="guest" class="entry position-{{entryData.position}}">
+  <td class="cell photo">
+    <img *ngIf="guest.photo_url" class="avatar valid-photo"
+         [src]="guest.photo_url">
+    <img *ngIf="!guest.photo_url"
+         class="avatar"
+         [src]="'../../assets/SVG/party_animals/' + randomImageIndex + '.svg'">
+  </td>
+  <td class="cell name">{{guest.name}}</td>
+  <td class="cell points">{{entryData.points}}p</td>
+</tr>

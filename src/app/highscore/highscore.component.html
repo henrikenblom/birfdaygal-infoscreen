@@ -1,0 +1,6 @@
+<iframe id="canvas" width="1920" height="1080"  allow="microphone" frameborder="0" src="https://www.shadertoy.com/embed/MsyczG?gui=false&t=10&paused=false&muted=false" allowfullscreen></iframe>
+<div class="highscore-page">
+  <table class="highscore-list">
+    <app-highscore-entry *ngFor="let entry of scoreList" [entryData]="entry"></app-highscore-entry>
+  </table>
+</div>
